@@ -458,7 +458,7 @@ asmlinkage void __init start_kernel(void)
 	char * command_line;
 	extern const struct kernel_param __start___param[], __stop___param[];
 
-	printk("(KICK-OFF) Penguins are cute, but so are polar bears!");
+	printk(KERN_NOTICE "(: Penguins are cute, but so are polar bears :)\n");
 
 	smp_setup_processor_id();
 

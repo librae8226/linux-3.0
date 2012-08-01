@@ -54,8 +54,8 @@
 static int nowayout	= WATCHDOG_NOWAYOUT;
 static int tmr_margin	= CONFIG_S3C2410_WATCHDOG_DEFAULT_TIME;
 static int tmr_atboot	= CONFIG_S3C2410_WATCHDOG_ATBOOT;
-static int soft_noboot;
-static int debug;
+static int soft_noboot  = 1;
+static int debug        = 1;
 
 module_param(tmr_margin,  int, 0);
 module_param(tmr_atboot,  int, 0);
